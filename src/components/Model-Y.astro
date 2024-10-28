@@ -1,0 +1,48 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section 
+			title="Model Y" 
+			subtitle="Concerta una prueba de conduccion"
+			color="black"
+			>
+      <div slot="footer" class="flex gap-x-4 mx-auto">
+        <a class=" bg-black/75 backdrop-blur-sm rounded text-sm font-medium px-12 py-2 inline-block text-white hover:text-white hover:bg-black transition-colors" href="#">
+          Explorar Inventario
+        </a>
+        <a class="bg-white rounded text-sm font-medium px-12 py-2 inline-flex justify-center items-center text-black hover:text-white hover:bg-black transition-colors" href="#">
+          Pedido personalizado
+        </a>
+      </div>
+
+        <img slot="background" src="/model-y.avif" alt="Tesla Model Y" class="w-full h-full object-cover object-center"/>
+      
+</Section>
+
+<!-- <section class="landing-section bg-black h-screen w-screen text-center relative overflow-hidden"
+data-header-color="black"
+>
+  <div class="flex flex-col z-30 relative h-full">
+    <header>
+      <h2 class="text-black pt-40 text-[40px] font-medium">Model Y</h2>
+
+    <p class="text-black text-sm underline">Concerta una prueba de conduccion</p>
+    </header>
+
+    <footer class="flex flex-col flex-grow flex-nowrap pb-20 justify-end">
+      <div class="flex gap-x-4 mx-auto">
+        <a class=" bg-black/75 backdrop-blur-sm rounded text-sm font-medium px-12 py-2 inline-block text-white hover:text-white hover:bg-black transition-colors" href="#">
+          Explorar Inventario
+        </a>
+        <a class="bg-white rounded text-sm font-medium px-12 py-2 inline-flex justify-center items-center text-black hover:text-white hover:bg-black transition-colors" href="#">
+          Pedido personalizado
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <div class="absolute top-0 bottom-0 w-full h-full z-10">
+    <img src="/model-y.avif" alt="Tesla Model Y" class="w-full h-full object-cover object-center"/>
+  </div>
+</section> -->

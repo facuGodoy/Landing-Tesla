@@ -1,0 +1,49 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section 
+			title="Model 3" 
+			subtitle="Concertar una prueba de conducción"
+			color="black"
+      id="model-3"
+			>
+      <div slot="footer" class="flex gap-x-4 mx-auto">
+        <a class=" bg-black/75 backdrop-blur-sm rounded text-sm font-medium px-12 py-2 inline-block text-white hover:text-white hover:bg-black transition-colors" href="#">
+          Explorar inventario
+        </a>
+        <a class="bg-white rounded text-sm font-medium px-12 py-2 inline-flex justify-center items-center text-black hover:text-white hover:bg-black transition-colors" href="#">
+          Pedido personalizado
+        </a>
+      </div>
+
+        <img 
+        slot="background" 
+        src="/model-3.avif"
+        alt="Tesla Model 3" 
+        class="w-full h-full object-cover object-center"/>
+      
+</Section>
+
+<script>
+  function isEdge() {
+    if (
+      navigator.userAgent.indexOf("Edge") > -1 ||
+      navigator.userAgent.indexOf("Edg") > -1
+    ) {
+      return true
+    } else {
+      return false
+    }
+  }
+
+  let imageElement = document.querySelector(
+    "#bg-image-modelx"
+  ) as HTMLImageElement
+
+  if (isEdge()) {
+    imageElement.src = "model-x.webp"
+  } else {
+    imageElement.src = "model-x.avif"
+  }
+</script>

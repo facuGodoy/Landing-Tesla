@@ -1,0 +1,26 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section 
+			title="Model X" 
+			subtitle="Programe una consulta virtual"
+			color="black"
+      id="model-x"
+			>
+      <div slot="footer" class="flex gap-x-4 mx-auto">
+        <a class=" bg-black/75 backdrop-blur-sm rounded text-sm font-medium px-12 py-2 inline-block text-white hover:text-white hover:bg-black transition-colors" href="#">
+          Pedido personalizado
+        </a>
+        <a class="bg-white rounded text-sm font-medium px-12 py-2 inline-flex justify-center items-center text-black hover:text-white hover:bg-black transition-colors" href="#">
+          Saber más
+        </a>
+      </div>
+
+        <img 
+        slot="background" 
+        src="/model-x.avif" 
+        alt="Tesla Model X" 
+        class="w-full h-full object-cover object-center"/>
+      
+</Section>
